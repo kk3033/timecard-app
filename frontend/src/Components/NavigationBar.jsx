@@ -1,15 +1,5 @@
-// import React from 'react'
-
-// function NavigationBar() {
-//   return (
-//     <div>NavigationBar</div>
-//   )
-// }
-
-// export default NavigationBar
-
 import React from "react";
-// import logoMark from '@/app/images/CM_Logo.jpg';
+import logoMark from './logo.jpg';
 const Navbar = () => {
   return (
     <nav className="bg-black">
@@ -30,6 +20,8 @@ const Navbar = () => {
               >
                 Login
               </a>
+              <input placeholder="Employee ID/Address..."></input>
+              <input placeholder="Password..."></input>
               {/* <a
                 href="/"
                 className="text-white hover:bg-white hover:text-black rounded-lg p-2"

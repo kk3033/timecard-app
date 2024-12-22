@@ -7,7 +7,6 @@ import TableData from './Components/TableData';
 function App() {
   return (
     <div>
-      <body>
       <NavBar />
       <h1 className="text-3xl font-bold text-center mb-9">
         3Gr.2Sc. 出退勤状況
@@ -15,7 +14,6 @@ function App() {
       
       {/* <EmployeeList /> */}
       <TableData/>
-      </body>
     </div>
   );
 }
