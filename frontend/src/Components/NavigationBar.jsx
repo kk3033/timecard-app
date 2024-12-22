@@ -30,12 +30,12 @@ const Navbar = () => {
               >
                 Login
               </a>
-              <a
+              {/* <a
                 href="/"
                 className="text-white hover:bg-white hover:text-black rounded-lg p-2"
               >
                 SignUp
-              </a>
+              </a> */}
             </div>
           </div>
         </div>
