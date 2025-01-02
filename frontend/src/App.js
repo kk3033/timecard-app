@@ -2,7 +2,7 @@ import './App.css';
 import NavBar from './Components/NavigationBar';
 import TableData from './Components/TableData';
 import Datetime from './Components/DigitalDateTime';
-// import MenuTab from './Components/TabMenu';
+import MenuTab from './Components/TabMenu';
 
 function App() {
   return (
@@ -13,8 +13,8 @@ function App() {
       </h1>
       
       <Datetime />
-      {/* <MenuTab /> */}
-      <TableData/>
+      <MenuTab />
+      {/* <TableData/> */}
     </div>
   );
 }
