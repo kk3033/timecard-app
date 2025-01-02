@@ -1,18 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
 import NavBar from './Components/NavigationBar';
-import EmployeeList from './Components/EmployeeList';
 import TableData from './Components/TableData';
+import Datetime from './Components/DigitalDateTime';
+// import MenuTab from './Components/TabMenu';
 
 function App() {
   return (
     <div>
-      <NavBar />
+      <NavBar isSignedIn={false}/>
       <h1 className="text-3xl font-bold text-center mb-9">
-        3Gr.2Sc. 出退勤状況
+        3Gr.2Sc. 出退勤管理
       </h1>
       
-      {/* <EmployeeList /> */}
+      <Datetime />
+      {/* <MenuTab /> */}
       <TableData/>
     </div>
   );

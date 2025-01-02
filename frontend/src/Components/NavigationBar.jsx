@@ -1,33 +1,38 @@
 import React from "react";
-import logoMark from './logo.jpg';
-const Navbar = () => {
+import logoMark from "../corporate_logo.svg";
+
+const Navbar = ({isSignedIn}) => {
   return (
     <nav className="bg-black">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <div className="flex items-center ">
-            <div className="flex-shrink-0">
-              <a href="/" className="text-white">
-              {/* <img src={logoMark} alt="Cooperate logo" /> */}
-              </a>
-            </div>
-          </div>
+          <a href="">
+            <img
+              src={logoMark}
+              className="flex items-left justify-between h-16"
+              alt="Corporate logo"
+            />
+          </a>
           <div className="hidden md:block">
             <div className="ml-4 flex items-center space-x-4">
+
+{/* ログイン前ホーム画面 --> ログイン情報入力ボックス
+　　ログイン後マイページ画面 --> ユーザー名表示 */}
+              {isSignedIn ? (
+                <p className="text-yellow-500">お疲れ様です！ ～～さん</p>
+              ):(
+                <div className="ml-4 flex items-center space-x-4">
+                <input placeholder="Employee ID/Address..."></input>
+              <input placeholder="Password..."></input>
               <a
-                href="/"
+                href="../MyPage.js"
                 className="text-white hover:bg-white hover:text-black rounded-lg p-2"
               >
                 Login
               </a>
-              <input placeholder="Employee ID/Address..."></input>
-              <input placeholder="Password..."></input>
-              {/* <a
-                href="/"
-                className="text-white hover:bg-white hover:text-black rounded-lg p-2"
-              >
-                SignUp
-              </a> */}
+              </div>
+              )}
+              
             </div>
           </div>
         </div>
