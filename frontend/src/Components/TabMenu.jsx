@@ -12,11 +12,11 @@ const TabMenu = () => {
       </TabList>
 
       <TabPanel>
-      <h1>本日の在席状況</h1>
+      <h1>本日の在席状況~~</h1>
       <TableData />
       </TabPanel>
       <TabPanel>
-        <h2>Any content 2</h2>
+        <h2>schedule component</h2>
       </TabPanel>
     </Tabs>
     </div>

@@ -22,14 +22,15 @@ const Navbar = ({isSignedIn}) => {
                 <p className="text-yellow-500">お疲れ様です！ ～～さん</p>
               ):(
                 <div className="ml-4 flex items-center space-x-4">
-                <input placeholder="Employee ID/Address..."></input>
-              <input placeholder="Password..."></input>
-              <a
+                <input type="text" placeholder="Employee ID/Address..."></input>
+                <input type="text" placeholder="Password..."></input>
+                <button className="text-white hover:bg-white hover:text-black rounded-lg p-2">Login</button>
+              {/* <a
                 href="../MyPage.js"
                 className="text-white hover:bg-white hover:text-black rounded-lg p-2"
               >
                 Login
-              </a>
+              </a> */}
               </div>
               )}
               
