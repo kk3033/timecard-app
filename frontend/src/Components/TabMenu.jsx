@@ -1,6 +1,8 @@
+import react from 'react';
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
-import TableData from './TableData';
 import "react-tabs/style/react-tabs.css";
+import TableData from './TableData';
+import Schedule from './Schedule';
 
 const TabMenu = () => {
   return (
@@ -17,6 +19,7 @@ const TabMenu = () => {
       </TabPanel>
       <TabPanel>
         <h2>schedule component</h2>
+        <Schedule />
       </TabPanel>
     </Tabs>
     </div>

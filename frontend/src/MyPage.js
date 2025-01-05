@@ -2,7 +2,8 @@ import './App.css';
 import NavBar from './Components/NavigationBar';
 import TableData from './Components/TableData';
 import Datetime from './Components/DigitalDateTime';
-// import MenuTab from './Components/TabMenu';
+import MenuTab from './Components/TabMenu';
+import StatusCtl from './Components/StatusControl';
 
 function MyPage() {
   return (
@@ -12,9 +13,10 @@ function MyPage() {
         3Gr.2Sc. 出退勤状況 マイページ
       </h1>
       
+      {/* manipulate attendancy and other status info */}
+      <StatusCtl />
       <Datetime />
-      {/* <MenuTab /> */}
-      <TableData/>
+      <MenuTab />
     </div>
   );
 }

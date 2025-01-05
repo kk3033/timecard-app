@@ -14,7 +14,6 @@ function App() {
       
       <Datetime />
       <MenuTab />
-      {/* <TableData/> */}
     </div>
   );
 }
